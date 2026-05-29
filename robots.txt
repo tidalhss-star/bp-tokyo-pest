@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tidalhss-star.github.io/bp-tokyo-pest//sitemap.xml
