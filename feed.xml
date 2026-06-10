@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[연남 연남 마사지 추천정보]]></title>
+  <title><![CDATA[마사지]]></title>
   <link>https://tokyo-pest.pages.dev</link>
-  <description><![CDATA[연남 마사지 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 14:27:55 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 14:27:55 GMT</lastBuildDate>
+  <description><![CDATA[마사지 - 연남 마사지 추천정보 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Fri, 05 Jun 2026 10:40:22 GMT</pubDate>
+  <lastBuildDate>Fri, 05 Jun 2026 10:40:22 GMT</lastBuildDate>
   <atom:link href="https://tokyo-pest.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[연남 연남 마사지 추천정보 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://tokyo-pest.pages.dev/</link>
-      <guid isPermaLink="true">https://tokyo-pest.pages.dev/</guid>
-      <description><![CDATA[연남 마사지 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 14:27:55 GMT</pubDate>
+      <title><![CDATA[월매출 3천 찍고 망한 연남동 썰: 네가 모르는 마사지샵 진짜 원가율]]></title>
+      <link>https://tokyo-pest.pages.dev/posts/review-001.html</link>
+      <guid isPermaLink="true">https://tokyo-pest.pages.dev/posts/review-001.html</guid>
+      <description><![CDATA[다들 연남동 마사지샵이니 뭐니, 추천 정보랍시고 깔끔한 인테리어랑 서비스만 보지? 월매출 3천? 그거 듣고 혹해서 뛰어드는 애들 한둘 본 게 아니야. 웃기는 소리 말라 그래. 내가 딱 6개월 만에 말아먹고 나온 사람인데, 그 매출은 숫자놀음일 뿐, 실제 주머니에 남는 ]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[연남동 골목의 숨은 근육을 푸는 법, 다크소울 삭제된 맵보다 더 희귀한 그 곳]]></title>
+      <link>https://tokyo-pest.pages.dev/posts/review-002.html</link>
+      <guid isPermaLink="true">https://tokyo-pest.pages.dev/posts/review-002.html</guid>
+      <description><![CDATA[형들, 스피드런 하다가 밤새 프레임 단위로 조건을 쪼개본 적 있어? 다크소울 1 편의 2011 년 3 월 빌드, 정확히 디모 버전의 '북쪽 불사원' 구역에는 지금과 완전히 다른 적 배치 로직이 존재했어. 특정 코너를 구르면 충돌 판정이 0.5 초 정도 늦게 뜬다는 걸 ]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
