@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="100%" stop-color="#a0522d"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#daa520"/>
+      <stop offset="100%" stop-color="#a0522d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Geometric pattern -->
+  <circle cx="1236" cy="36" r="52" fill="#a0522d" opacity="0.08"/>
+    <circle cx="337" cy="-75" r="34" fill="#a0522d" opacity="0.09"/>
+    <circle cx="1231" cy="78" r="87" fill="#a0522d" opacity="0.13"/>
+    <circle cx="1025" cy="6" r="81" fill="#a0522d" opacity="0.09"/>
+    <circle cx="828" cy="77" r="28" fill="#a0522d" opacity="0.16"/>
+    <circle cx="981" cy="239" r="20" fill="#a0522d" opacity="0.08"/>
+    <rect x="-99" y="546" width="94" height="27" rx="8" fill="#8b4513" opacity="0.15" transform="rotate(31, 483, -20)"/>
+    <rect x="659" y="669" width="28" height="47" rx="8" fill="#8b4513" opacity="0.07" transform="rotate(6, -95, 650)"/>
+    <rect x="469" y="501" width="39" height="67" rx="8" fill="#8b4513" opacity="0.09" transform="rotate(22, 778, 40)"/>
+    <rect x="76" y="416" width="65" height="64" rx="8" fill="#8b4513" opacity="0.10" transform="rotate(14, 876, 247)"/>
+    <rect x="216" y="478" width="57" height="76" rx="8" fill="#8b4513" opacity="0.13" transform="rotate(23, 1114, 139)"/>
+    <rect x="807" y="476" width="21" height="92" rx="8" fill="#8b4513" opacity="0.14" transform="rotate(4, 85, 383)"/>
+    <rect x="97" y="532" width="91" height="61" rx="8" fill="#8b4513" opacity="0.13" transform="rotate(7, 476, 307)"/>
+    <rect x="960" y="658" width="42" height="76" rx="8" fill="#8b4513" opacity="0.07" transform="rotate(44, 200, 81)"/>
+    <polygon points="274,-39 342,97 206,97" fill="#a0522d" opacity="0.12"/>
+    <polygon points="1138,0 1202,128 1074,128" fill="#a0522d" opacity="0.06"/>
+    <polygon points="178,456 261,622 95,622" fill="#a0522d" opacity="0.09"/>
+    <polygon points="280,370 346,502 214,502" fill="#a0522d" opacity="0.06"/>
+
+  <!-- Wave at bottom -->
+  <path d="M0,572 C360,601 840,543 1200,572 L1200,630 L0,630Z" fill="#a0522d" opacity="0.3"/>
+
+  <!-- 중앙 텍스트 카드 -->
+  <rect x="80" y="195" width="1040" height="260" rx="20" fill="rgba(0,0,0,0.35)" filter="url(#blur-bg)"/>
+  <filter id="blur-bg"><feGaussianBlur stdDeviation="8"/></filter>
+
+  <text x="600" y="270" text-anchor="middle" font-family="'Noto Sans JP','Noto Sans KR','Pretendard',sans-serif" font-size="44" font-weight="700" fill="#ffffff" letter-spacing="2">
+    연남 마사지 추천정보
+  </text>
+  <text x="600" y="330" text-anchor="middle" font-family="'Noto Sans JP','Noto Sans KR','Pretendard',sans-serif" font-size="22" font-weight="400" fill="rgba(255,255,255,0.85)">
+    연남 — 마사지
+  </text>
+
+  <!-- Accent line -->
+  <line x1="450" y1="355" x2="750" y2="355" stroke="#daa520" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- 하단 CTA -->
+  <rect x="440" y="385" width="320" height="40" rx="20" fill="#daa520" opacity="0.9"/>
+  <text x="600" y="411" text-anchor="middle" font-family="'Noto Sans JP','Noto Sans KR','Pretendard',sans-serif" font-size="16" font-weight="600" fill="#ffffff">
+    ▼ 자세히 보기
+  </text>
+
+  <!-- 상단 브랜드 -->
+  <text x="60" y="55" font-family="'Noto Sans JP','Noto Sans KR','Pretendard',sans-serif" font-size="18" font-weight="600" fill="rgba(255,255,255,0.6)">
+    연남 연남 마사지 추천정보 — 마사지
+  </text>
+</svg>
