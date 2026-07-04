@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://sangsu-hotplace-info.xyz/sitemap.xml
+
+Sitemap: https://tokyo-pest.node-link.shop/sitemap.xml
