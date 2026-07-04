@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tokyo-pest.node-link.shop/sitemap.xml
+Sitemap: https://yeonnam-body-care.node-link.shop/sitemap.xml
