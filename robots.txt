@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yeonnam-body-care.node-link.shop/sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://sangsu-hotplace-info.xyz/sitemap.xml
