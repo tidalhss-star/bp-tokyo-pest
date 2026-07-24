@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <defs><linearGradient id="bgtoky" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#1b5e20"/><stop offset="100%" stop-color="#4a148c"/>
-  </linearGradient></defs>
-  <rect width="32" height="32" rx="6" fill="url(#bgtoky)"/>
-  <polygon points="16,2 28,16 16,30 4,16" fill="rgba(27,94,32,0.9)" stroke="rgba(74,20,140,0.6)" stroke-width="2"/>
-  <text x="16" y="21" text-anchor="middle" fill="#fff" font-size="8" font-weight="700" font-family="system-ui">TO</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
+  <title>연남 마사지 추천정보</title>
+  <rect width="64" height="64" rx="12" fill="hsl(78 46% 29%)"/>
+  <path d="M64 0v26L38 0Z" fill="hsl(208 68% 61%)" opacity="0.16"/>
+  <g transform="rotate(90 32 32)"><path d="M32 14 52 48H12Z" fill="none" stroke="hsl(78 24% 96%)" stroke-width="8" stroke-linejoin="round"/><path d="M32 30 41 46H23Z" fill="hsl(208 68% 61%)"/></g>
 </svg>
