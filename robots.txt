@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sangsu-hotplace-info.xyz/sitemap.xml
+Sitemap: https://sangsu-hotplace-info.xyz/sitemap-pages.xml
 Sitemap: https://sangsu-hotplace-info.xyz/sitemap-index.xml
