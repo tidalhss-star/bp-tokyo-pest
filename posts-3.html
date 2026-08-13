@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (3/5) · tokyo-pest</title>
+  <meta name="description" content="tokyo-pest에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sangsu-hotplace-info.xyz/posts-3.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS 핵심: :root, body, .k-side-ocl8, header, h1, .m-list-h3sg, .n-img-ua8z, .r-item-5c1k, .x-grid-4sys, @media (max-width: 768px) 등 이전 페이지와 동일한 디자인 시스템 유지 */
+ /* 실제 CSS 코드는 여기에 포함되어야 하지만, 지시사항에 따라 출력하지 않습니다. */
+ /* 이 부분은 이전 페이지의 CSS를 그대로 복사하여 사용한다고 가정합니다. */
+ :root {
+ --color-primary-light: #f5f0e1; /* 아이보리 계열 */
+ --color-primary-dark: #3a3a3a; /* 잉크 계열 */
+ --color-accent-gold: #c2a26d;
+ --color-text-dark: #333333;
+ --color-text-light: #ffffff;
+ --font-family-serif: 'Noto Serif KR', serif;
+ --font-family-sans: 'Noto Sans KR', sans-serif;
+ --spacing-unit: 1rem;
+ }
+
+ body {
+ font-family: var(--font-family-sans);
+ line-height: 1.6;
+ color: var(--color-text-dark);
+ background-color: var(--color-primary-light);
+ margin: 0;
+ padding: 0;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+
+ .k-side-ocl8 {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: calc(var(--spacing-unit) * 2);
+ }
+
+ header {
+ background-color: var(--color-primary-light);
+ padding: calc(var(--spacing-unit) * 2) 0;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
+
+ header h1 {
+ font-family: var(--font-family-serif);
+ color: var(--color-primary-dark);
+ font-size: 2.5rem;
+ margin-bottom: var(--spacing-unit);
+ letter-spacing: -0.05em;
+ }
+
+ header nav {
+ margin-top: var(--spacing-unit);
+ }
+
+ header nav a {
+ font-family: var(--font-family-sans);
+ color: var(--color-primary-dark);
+ text-decoration: none;
+ margin: 0 var(--spacing-unit);
+ font-size: 1.1rem;
+ font-weight: 500;
+ position: relative;
+ padding-bottom: 0.2rem;
+ }
+
+ header nav a:hover {
+ color: var(--color-accent-gold);
+ }
+
+ header nav a::after {
+ content: '';
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ width: 0;
+ height: 2px;
+ background-color: var(--color-accent-gold);
+ transition: width 0.3s ease-in-out;
+ }
+
+ header nav a:hover::after,
+ header nav a[aria-current="page"]::after {
+ width: 100%;
+ }
+
+ .m-list-h3sg {
+ background-color: var(--color-text-light);
+ padding: calc(var(--spacing-unit) * 3);
+ margin-bottom: calc(var(--spacing-unit) * 3);
+ border-radius: 8px;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+ }
+
+ .m-list-h3sg h2 {
+ font-family: var(--font-family-serif);
+ color: var(--color-primary-dark);
+ font-size: 2rem;
+ margin-bottom: var(--spacing-unit);
+ text-align: center;
+ }
+
+ .m-list-h3sg p {
+ font-family: var(--font-family-sans);
+ font-size: 1.1rem;
+ line-height: 1.8;
+ color: var(--color-text-dark);
+ text-align: justify;
+ }
+
+ .n-img-ua8z {
+ margin-bottom: calc(var(--spacing-unit) * 3);
+ border-radius: 8px;
+ overflow: hidden;
+ box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ .n-img-ua8z img {
+ width: 100%;
+ height: auto;
+ display: block;
+ object-fit: cover;
+ object-position: center;
+ }
+
+ .x-grid-4sys {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: calc(var(--spacing-unit) * 2);
+ margin-bottom: calc(var(--spacing-unit) * 3);
+ }
+
+ .x-grid-4sys h3 {
+ grid-column: 1 / -1; /* Full width for grid title */
+ font-family: var(--font-family-serif);
+ color: var(--color-primary-dark);
+ font-size: 1.8rem;
+ text-align: center;
+ margin-bottom: var(--spacing-unit);
+ }
+
+ .r-item-5c1k {
+ background-color: var(--color-text-light);
+ padding: calc(var(--spacing-unit) * 2);
+ border-radius: 8px;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+ border-left: 4px solid var(--color-accent-gold);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .r-item-5c1k:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+ }
+
+ .r-item-5c1k h4 {
+ font-family: var(--font-family-serif);
+ color: var(--color-primary-dark);
+ font-size: 1.3rem;
+ margin-top: 0;
+ margin-bottom: var(--spacing-unit);
+ }
+
+ .r-item-5c1k p {
+ font-family: var(--font-family-sans);
+ font-size: 1rem;
+ color: var(--color-text-dark);
+ line-height: 1.7;
+ }
+
+ @media (max-width: 768px) {
+ .k-side-ocl8 {
+ padding: var(--spacing-unit);
+ }
+
+ header h1 {
+ font-size: 2rem;
+ }
+
+ header nav {
+ flex-wrap: wrap;
+ justify-content: center;
+ }
+
+ header nav a {
+ margin: 0.5rem 0.8rem;
+ font-size: 1rem;
+ }
+
+ .m-list-h3sg {
+ padding: calc(var(--spacing-unit) * 1.5);
+ }
+
+ .m-list-h3sg h2 {
+ font-size: 1.7rem;
+ }
+
+ .m-list-h3sg p {
+ font-size: 1rem;
+ }
+
+ .x-grid-4sys {
+ grid-template-columns: 1fr;
+ }
+
+ .x-grid-4sys h3 {
+ font-size: 1.5rem;
+ }
+
+ .r-item-5c1k {
+ padding: var(--spacing-unit);
+ }
+
+ .r-item-5c1k h4 {
+ font-size: 1.2rem;
+ }
+
+ .r-item-5c1k p {
+ font-size: 0.95rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (3/5) · tokyo-pest">
+  <meta property="og:description" content="tokyo-pest에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sangsu-hotplace-info.xyz/posts-3.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <h1>연남 마사지, 이제는 제대로 알아야 할 때</h1>
+ <nav>
+ <a href="/" aria-current="false">홈</a>
+ <a href="/recommend" aria-current="false">추천</a>
+ <a href="/guide" aria-current="false">가이드</a>
+ <a href="/about" aria-current="page">소개</a>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 88개 · 3/5 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-skrlpa.html">필름 한 컷에 숨은 광기, 편집실에서 우리가 타일러를 6번 심은 이유</a>
+        <p class="post-item__summary">편집실 문 앞에 &quot;방해 금지&quot;라고 써 붙이고, 제프와 나는 밤새 싸웠다. 아니, 싸웠다기보다 투덜댔다는 게 맞겠지. 필름 스플라이서 위에 올려진 장면은 잭(에드워드 노튼)이 복사기 옆에서 멍하니 서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-tjul6n.html">남들이 별점 남발하는 세상, 나는 한 프레임씩 들여다본다</a>
+        <p class="post-item__summary">2000년 10월, 20세기폭스가 DVD 버전을 출시했을 때 온라인 포럼에는 기묘한 캡처가 하나 돌아다녔다. 파이트 클럽 1시간 12분 부근, 찰리 채플린이 등장하는 고화질 뉴스 리포트 장면 사이에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-16ytcku.html">마사지 해결 방법 총정리</a>
+        <p class="post-item__summary">우리는 사용자로부터 복잡한 지시를 받았습니다. 사용자는 먼저 &quot;2023년 홍대 상권에서 폐업한 업소들의 공통된 원인과 살아남은 곳들의 차별화 전략&quot;이라는 주제로 글을 쓰라고 했지만, 동시에 &quot;제목 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-1xxcme6.html">3천만 원짜리 파리 덩크를 찢으며 깨달은, 겉멋 든 연남동 테라피와 진짜 복원의 한 끗 차이</a>
+        <p class="post-item__summary">&quot;작가님, 이거 박스 모퉁이 살짝 젖은 거 같은데 리셀가 40% 날아간 거 맞죠?&quot;</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-lwa5rq.html">연남에서 찾은 나만을 위한 마사지 휴식 가이드</a>
+        <p class="post-item__summary">연남은 수많은 사람이 오가며 활기가 넘치는 곳이지만 그만큼 바쁜 일상 속에서 피로가 쌓이기 쉬운 동네이기도 합니다. 신체 곳곳에 배어 있는 긴장을 완화하고 온전한 평온을 되찾고 싶을 때 연남 내에 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-r0jgdt.html">방구석 평론가의 고백: 파이트 클럽 싱글 프레임, 당신이 본 척만 한 미친 연출 실험</a>
+        <p class="post-item__summary">1999년, 파이트 클럽이 극장에서 처음 상영됐을 때 나는 IMDB 3점대 쓰레기 영화나 전전하던 대학생이었다. 그해 겨울, 지방의 한 리트로 극장에서 35mm 필름을 네 번째로 감상하던 중, 내 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-td0vtz.html">카드 스탯, 지압점처럼 꼼꼼히 파헤쳐야 하는 이유 – 글룸헤이븐 1판 vs 2판, 7장의 침묵한 전쟁</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-005-1qusubi.html">연남동 마사지, 그놈의 티어표 만든 새끼 누구야</a>
+        <p class="post-item__summary">대부분 사람들은 연남동 마사지 업체 고를 때 티어표부터 찾는다. 나는 그게 가장 멍청한 접근법이라고 생각한다. 티어 만든 놈들이 실제로 몇 군데나 발품 팔아봤겠어. 대부분 업체끼리 서로 엮여서 돌려</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-004-41pke6.html">슬라이드 7 장의 공백을 채우려는 건, 왜 마사지를 고를 때와 똑같냐</a>
+        <p class="post-item__summary">nsa,prism,document,slide,analysis,data,visualization,cyber,spy,investigation,relaxation,massage,yeonnam,compar</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-004-ovt1iu.html">1 판과 2 판 사이, 손끝으로 느껴지는 미세한 반동</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-004-pby1he.html">CIA 프로젝트 코드명과 연남 마사지 샵의 공통된 숨겨진 페이지 번호</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-001-n45uka.html">가성비 집착증이 만든 명작의 허상: 연남 마사지 추천정보와 유니콘 소품의 평행이론</a>
+        <p class="post-item__summary">0달러짜리 버려진 필름 푸티지와 12달러짜리 저가 플라스틱 모형의 광학 합성. 전자는 영화사에 남을 철학적 메타포가 되었고, 후자는 촬영장 구석에서 분리수거를 기다리던 플라스틱 쓰레기였습니다. 이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-002-afdm3j.html">셔츠룸의 숨겨진 이야기: 연남 마사지 추천정보 비교 분석</a>
+        <p class="post-item__summary">1972년 의회 청문회에서 공개되지 않은 MK울트라 프로젝트의 서브프로젝트 코드명과 목적은 우리에게 중요한 교훈을 건네준다. 그 교훈은 단순히 정보를 수집하는 것보다, 그것을 분석하고 비교하는 데 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-004-1gdzzw7.html">300만원짜리 실수를 부르는 0.5mm의 비밀, 인솔 프린트 하나로 망한 거래 썰</a>
+        <p class="post-item__summary">&quot;이게 정말 2023년 리스탁분이 맞나요?&quot;</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-004-m31bz9.html">2억 권리금 실거래 내역서가 밝힌 홍대 셔츠룸 살아남은 비법</a>
+        <p class="post-item__summary">2023년 9월 초, 홍대 골목에서 “A-2023-09-01” 계약서가 서명된 순간을 떠올려보면, 내 손 안에 뜨거운 종이 한 장이 있었다. 그 종이엔 권리금 2억 원, 월세 350만 원, 그리고 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-1hjyx3x.html">연남 마사지 추천정보</a>
+        <p class="post-item__summary">연남동 구역은 경의선 숲길을 중심으로 골목 상권이 그물망처럼 촘촘하게 형성된 지역입니다. 평일 저녁이나 주말 약속으로 연남동을 찾는 경우, 식사나 카페 이동 전후로 힐링 타임을 가지려는 인원이 늘어</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-1qk5nos.html">연남 마사지 추천정보</a>
+        <p class="post-item__summary">처음 방문자를 위한 조건별 선택 안내</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-ojnh57.html">연남 마사지 추천정보, 그게 다가 아니다</a>
+        <p class="post-item__summary">권리금 2억 받고 명도(명도)해 준 날, 전 세입자가 마지막으로 남긴 메모가 &quot;에어컨 실외기위치, 꼭 확인하라&quot;였어. 그게 다인 줄 알았지. 아니었어.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-v17par.html">파이트 클럽의 싱글 프레임, 하드웨어 성애자들이 놓친 결정적 힌트 하나</a>
+        <p class="post-item__summary">1999년 가을, 나는 친구가 빌려준 불법 복제 VHS 테이프로 이 영화를 처음 봤다. 화질은 개판이었고, 트래킹도 자꾸 틀어졌다. 영화가 끝나고 &quot;뭐 이런 싸구려 연출이 다 있어&quot;라고 생각했던 장</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-003-10380rq.html">데이터 시트에 숨겨진 1.04 패치의 배신과 연남 마사지 추천정보의 실체</a>
+        <p class="post-item__summary">어째서 대다수의 분석가들은 1.04 패치가 단지 특정 대검의 모션 프레임만 버프한 업데이트라고 굳게 믿고 있을까?</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <span class="pager__current">3</span>
+      <a class="pager__link" href="posts-4.html">4</a>
+      <a class="pager__link" href="posts-5.html">5</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
